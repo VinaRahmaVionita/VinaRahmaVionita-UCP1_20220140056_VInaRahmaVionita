@@ -1,0 +1,318 @@
+body {
+    background-color: hsl(126, 37%, 63%);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: rgb(5, 56, 15);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+  }
+  
+  .navbar-nav > li > a {
+    color: #faf5f5;
+  }
+
+  button {
+    background-color: #376038; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border: none; /* Menghapus border */
+    border-radius: 5px; /* Memperhalus sudut tombol */
+    cursor: pointer; /* Menampilkan kursor pointer saat dihover */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Warna latar belakang tombol saat dihover */
+  }
+    
+footer {
+    background-color: rgb(5, 56, 15);/* warna latar belakang footer */
+    color: white; /* warna teks footer */
+    padding: 20px 0; /* ruang di sekitar teks footer */
+    margin-top: 20px; /* Jarak atas dari paragraf terakhir */
+  }
+  
+  footer p {
+    margin-bottom: 0; /* menghapus margin bawah pada paragraf dalam footer */
+    color: #ccc; /* warna font pada teks paragraf dalam footer */
+  }
+  
+  footer .py-3 {
+    padding-top: 1rem; /* tambahkan ruang atas pada div dengan kelas py-3 */
+    padding-bottom: 1rem; /* tambahkan ruang bawah pada div dengan kelas py-3 */
+  }
+
+  
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+}
+
+.carousel-caption h3 {
+    font-size: 30px; /* Ukuran font judul */
+    margin-bottom: 10px; /* Jarak antara judul dan deskripsi */
+  }
+  
+  .carousel-caption p {
+    font-size: 20px; /* Ukuran font deskripsi */
+  }
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+}
+/* Dropdown styles */
+.dropdown-menu {
+    background-color: #2a753f;
+  }
+  
+  .dropdown-menu > li > a {
+    color: #063b0b;
+  }
+  
+  .dropdown-menu > li > a:hover {
+    background-color: #4a824a;
+  }
+
+  /* Center align the content */
+.container {
+    text-align: center;
+  }
+  
+  /* Style for the image containers */
+  .col-sm-4 {
+    margin-bottom: 20px; /* Add some space between each image */
+  }
+  
+  /* Style for the paragraph text */
+  p {
+    font-size: 20px;
+  }
+  
+  /* Responsive styling for images */
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  .circle-image {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Atur jarak antara gambar dan footer */
+  }
+  
+  .circle-image img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  #greetings {
+    font-size: 24px;
+    font-weight: bold;
+    color: #013d16;
+    margin-bottom: 10px;
+    text-align: center; /* Menempatkan greeting di tengah */
+  }
+  
+  #current-time {
+    font-size: 18px;
+    color: #296443;
+    text-align: center; /* Menempatkan waktu di tengah */
+    margin-bottom: 20px; /* Atur jarak antara waktu dan gambar */
+  }
+
+
+
+/* Remove rounded borders from list */
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Remove border and add padding to thumbnails */
+.thumbnail {
+  padding: 0 0 5px 0;
+  border: none;
+  border-radius: 0;
+  background-color: #6a9360; /* Warna latar belakang */
+}
+
+.thumbnail img {
+  height: 400px; /* Sesuaikan dengan tinggi yang diinginkan */
+  width: auto; /* Atau sesuaikan dengan lebar yang diinginkan */
+}
+
+
+.thumbnail p {
+  margin-top: 5px;
+  color: #fffdfd;
+}
+
+/* Black buttons with extra padding and without rounded borders */
+.btn {
+  padding: 10px 10px;
+  background-color: #4ec158;
+  color: #013a13;
+  border-radius: 0;
+  transition: .2s;
+}
+
+/* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+  border: 1px solid #063e12;
+  background-color: #27eb0d;
+  color: #08521e;
+}
+
+audio {
+  width: 100%; /* Lebar audio memenuhi lebar parent */
+  margin-top: 20px; /* Jarak dari atas */
+  margin-bottom: 20;
+}
+
+/* Atur gaya untuk pemutar audio */
+audio::-webkit-media-controls-panel {
+  background-color: #205d05; /* Warna latar belakang */
+  border-radius: 10px; /* Bulatan sudut */
+  padding: 10px; /* Jarak antara border dan isi pemutar */
+}
+
+/* Atur gaya untuk tombol pemutar */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+  color: #02320e; /* Warna ikon play dan pause */
+  font-size: 24px; /* Ukuran ikon play dan pause */
+}
+
+/* Atur gaya untuk label waktu */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #167b1b; /* Warna teks waktu */
+  font-size: 14px; /* Ukuran teks waktu */
+}
+
+/* Atur gaya untuk slider volume */
+audio::-webkit-media-controls-volume-slider {
+  width: 100px; /* Lebar slider volume */
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling untuk gambar */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.row img {
+  margin-bottom: 20px; /* Jarak antara gambar-gambar */
+}
+
+.text {
+  background-color: #107a3b;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(110, 107, 107, 0.1);
+  margin-bottom: 30px; /* Jarak antara kontainer "OUR BACKGROUND" dengan gambar-gambar */
+}
+
+h1 {
+  color: #e9e9e9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+video {
+  width: 80%; /* Video akan mengisi lebar container */
+  height: auto; /* Tinggi video akan menyesuaikan proporsi aslinya */
+  margin-top: 20px; /* Jarak atas dari paragraf */
+  margin-bottom: 20px; /* Jarak bawah dari paragraf */
+}
+
+.container1 {
+  max-width: 960px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Pusatkan kontainer */
+  padding: 20px; /* Padding untuk memberi ruang di sekitar konten */
+}
+
+.text-center {
+  text-align: center; /* Pusatkan teks */
+}
+
+.test {
+  margin-top: 30px; /* Jarak atas dari elemen */
+}
+
+.col-md-4 {
+  width: 33.33%; /* Setiap kolom akan mengambil 1/3 lebar kontainer */
+  float: left; /* Float kolom untuk menyusun secara horizontal */
+  padding: 0 30px; /* Padding kiri dan kanan untuk memberi ruang antar kolom */
+  box-sizing: border-box; /* Pastikan padding termasuk dalam lebar kolom */
+}
+
+.form-group {
+  margin-bottom: 30px; /* Jarak antara elemen formulir */
+}
+
+.form-control {
+  width: 100%; /* Lebar formulir 100% dari lebar kolom */
+}
+
+textarea {
+  resize: vertical; /* Biarkan textarea diubah ukurannya secara vertikal */
+  width: 100%; /* Lebar textarea 100% dari lebar kolom */
+}
+
+
+.container2 {
+  text-align: center; /* Pusatkan konten dalam container */
+  margin-top: 20px; /* Jarak atas dari elemen sebelumnya */
+}
+
+.container2 img {
+  max-width: 500px; /* Pastikan gambar tidak melebihi lebar container */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+  display: block; /* Membuat gambar menjadi blok agar margin dan padding berfungsi dengan baik */
+  margin-top: 20px; /* Jarak atas dari elemen sebelumnya */
+}
+
+.container2 h7 {
+  font-size: 20px; /* Ukuran font */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px; /* Jarak atas dari gambar */
+  margin-bottom: 20;
+}
